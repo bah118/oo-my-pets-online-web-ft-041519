@@ -52,7 +52,7 @@ class Owner
   end
   
   def sell_pets
-    @pets.values.flatten.each {|pet| pet.mood = "nervous"}
+    @pets.values.flatten.each{|pet| pet.mood = "nervous"}
     @pets.clear
   end
   
