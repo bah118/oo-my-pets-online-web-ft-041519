@@ -51,7 +51,7 @@ class Owner
   end
   
   def sell_pets
-    @pets.each { |key_value_pair| key_value_pair.values.mood = "nervous" }
+    @pets.each { |key_value_pair| key_value_pair.mood = "nervous" }
     
     
     
