@@ -57,12 +57,6 @@ class Owner
     # @pets[:fishes].each{|fish| fish.mood = "nervous"}
     
     @pets.values.flatten.each {|pet| pet.mood = "nervous"}
-    
-    # @pets.each do |a|                           # :dogs, :cats, :fishes
-    #   a.flatten.each {|b| b.mood = "nervous" } 
-    # end
-    
-    
     @pets.clear
   end
   
