@@ -52,7 +52,7 @@ class Owner
   end
   
   def sell_pets
-    binding.pry
+    # binding.pry
     @pets.each{|a| a.collect{|b| b.mood = "nervous"}}
     @pets.clear
   end
