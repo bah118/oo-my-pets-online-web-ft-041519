@@ -56,12 +56,11 @@ class Owner
     # @pets[:cats].each{|cat| cat.mood = "nervous"}
     # @pets[:fishes].each{|fish| fish.mood = "nervous"}
     
+    @pets.values.each {|pet| pet.mood = "nervous"}
     
-    # @pets.each_value{|pet| pet.mood = "nervous"}
-    
-    @pets.each do |a|                           # :dogs, :cats, :fishes
-      a.flatten.each {|b| b.mood = "nervous" } 
-    end
+    # @pets.each do |a|                           # :dogs, :cats, :fishes
+    #   a.flatten.each {|b| b.mood = "nervous" } 
+    # end
     
     
     @pets.clear
