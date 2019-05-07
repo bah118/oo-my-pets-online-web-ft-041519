@@ -60,7 +60,7 @@ class Owner
     # @pets.each_value{|pet| pet.mood = "nervous"}
     
     @pets.each do |a|                           # :dogs, :cats, :fishes
-      a.flatten.each_value {|b| b.mood = "nervous" } 
+      a.flatten.each {|b| b.mood = "nervous" } 
     end
     
     
